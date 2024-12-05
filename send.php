@@ -4,7 +4,7 @@ function exec_print($path){
 	$command = "/home/klab/print.sh ";
 	$command .= $path;
 	$ret = shell_exec($command);
-	echo $command;
+	echo $ret;
 }
 
 $file = $_FILES['file']['tmp_name'];
