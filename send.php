@@ -3,8 +3,8 @@
 function exec_print($path){
 	$command = "/home/klab/print.sh ";
 	$command .= $path;
-	$ret = shell_exec($command);
-	echo $ret;
+	//exec($command, $output, $status);
+	echo $output;
 }
 
 $file = $_FILES['file']['tmp_name'];
